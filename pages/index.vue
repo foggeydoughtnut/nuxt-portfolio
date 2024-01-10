@@ -4,6 +4,6 @@
 
 <template>
   <div>
-    Home Page
+    <font-awesome-icon icon="fa-solid fa-check" />
   </div> 
 </template>
