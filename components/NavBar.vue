@@ -2,11 +2,29 @@
   <div class="flex flex-row justify-center p-4 bg-background shadow-lg shadow-background">
     <div class="flex flex-row gap-4">
       <div v-for="page in pages">
-        <NuxtLink :to="page.to" v-if="page.id === selectedPage" class="underline hover:text-secondary font-semibold underline-offset-4"><font-awesome-icon :icon="page.icon" /> {{ page.title }}</NuxtLink>
-        <NuxtLink :to="page.to" v-else @click="setSelectedPage(page.id)" class="hover:text-secondary font-semibold"><font-awesome-icon :icon="page.icon" /> {{ page.title }}</NuxtLink>
+        <NuxtLink 
+          v-if="page.id === selectedPage"
+          :to="page.to"
+          class="underline hover:text-secondary font-semibold underline-offset-4"
+        >
+          <font-awesome-icon :icon="page.icon" /> {{ page.title }}
+        </NuxtLink>
+
+        <NuxtLink
+          v-else
+          :to="page.to"
+          @click="setSelectedPage(page.id)"
+          class="hover:text-secondary font-semibold"
+        >
+          <font-awesome-icon :icon="page.icon" /> {{ page.title }}
+        </NuxtLink>
       </div>
-      <NuxtLink v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
-        {{ console.log(availableLocales) }}
+      <NuxtLink 
+        v-for="locale in availableLocales"
+        :key="locale.code"
+        :to="switchLocalePath(locale.code)"
+        class="hover:text-secondary font-semibold"
+      >
         {{  locale.name }}
       </NuxtLink>
     </div>
@@ -21,13 +39,9 @@ import type { LocaleObject } from '@nuxtjs/i18n/dist/runtime/composables';
 const { t } = useI18n();
 const localePath = useLocalePath();
 const switchLocalePath = useSwitchLocalePath()
-const { locale, locales } = useI18n()
+const { locales } = useI18n()
 
-const availableLocales = computed(() => {
-  console.log(locales.value)
-
-  return (<LocaleObject[]>locales.value);
-})
+const availableLocales = computed(() => <LocaleObject[]>locales.value)
 
 const selectedPage = ref(0);
 
@@ -38,7 +52,7 @@ const setSelectedPage = (id: number) => {
 
 
 
-const pages = [
+const pages = computed(() => [
   {
     title: t('home'),
     to: localePath({ name: 'index' }),
@@ -69,7 +83,7 @@ const pages = [
     icon: 'fa-brands fa-linkedin',
     id: 4
   }
-]
+])
 
 
 </script>

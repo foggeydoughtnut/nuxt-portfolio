@@ -13,7 +13,11 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/i18n',
+    '@nuxt/image'
   ],
+  image: {
+
+  },
   i18n: {
     vueI18n: './i18n.config.ts',
     strategy: 'prefix_except_default',
