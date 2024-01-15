@@ -24,7 +24,5 @@
     description: string,   
   }>()
 
-  const { image, title, description } = toRefs(props);
-
   const { t } = useI18n();
 </script>

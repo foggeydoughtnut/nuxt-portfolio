@@ -20,6 +20,15 @@ export default defineI18nConfig(() => ({
         most_recent_project: 'Below is my most recent project',
         //
 
+        // About Page
+        about_title: 'About Me!',
+        bio: 'My name is Jeff Anderson. I am a frontend engineer at Conxx Inc where I help develop their GridObserver platform as well as the Komodo Eye platform using tools like Nuxt and Vue. ',
+        //
+
+        // Projects Page
+        projects_page_title: "Projects",
+        //
+
         // Project Card
         learn_more: "Learn More",
         //
@@ -45,9 +54,19 @@ export default defineI18nConfig(() => ({
         most_recent_project: "最近の作品",
         //
 
+        // About Page
+        about_title: '自己紹介！',
+        bio: 'ENTER TRANSLATION',
+        //
+
+        // Projects Page
+        projects_page_title: "作品",
+        //
+
         // Project Card
         learn_more: "もっと情報",
         //
+
 
         // Projects
         // Galaga

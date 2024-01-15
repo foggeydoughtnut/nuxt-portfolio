@@ -1,5 +1,3 @@
 <template>
-  <div>
-    Projects
-  </div>
+  <PageTitle title="projects_page_title" />
 </template>
