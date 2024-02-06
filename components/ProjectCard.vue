@@ -1,12 +1,14 @@
 <template>
-  <div class="text-start shadow-xl rounded-xl overflow-hidden">
-    <NuxtPicture v-if="image" :src="image"/>
-    <div class="p-8">
+  <div class="text-start shadow-xl rounded-xl overflow-hidden relative">
+    <div class="flex justify-center h-3/5 overflow-hidden">
+      <NuxtPicture v-if="image" :src="image" fit="cover"/>
+    </div>
+    <div class="px-8 py-4">
       <h1 class="font-semibold text-2xl">{{ t(title) }}</h1>
-      <p class="text-md my-4">{{ t(description) }}</p>
-      <div class="flex flex-row justify-end">
+      <p class="text-md pb-24 py-4">{{ t(description) }}</p>
+      <div class="absolute bottom-8 right-8">
         <NuxtLink 
-          to="https://github.com/foggeydoughtnut/Portfolio-v2"
+          :to="link"
           target="_blank"
           class="bg-primary hover:bg-primary-dark px-4 py-3 rounded-lg font-semibold text-lg transition-all ease-in-out"
         >
@@ -21,7 +23,8 @@
   const props = defineProps<{
     image?: string,
     title: string,
-    description: string,   
+    description: string,
+    link: string,
   }>()
 
   const { t } = useI18n();

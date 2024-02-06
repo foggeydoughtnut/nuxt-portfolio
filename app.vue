@@ -1,10 +1,13 @@
 <template>
-  <div class="h-screen bg-background">
-    <div class="flex w-full">
-      <NavBar class="w-full"/>
+  <!-- <div class="h-full bg-background">
+    <div class="">
+      <NavBar />
     </div>
-    <div class=" p-4">
+    <div>
       <NuxtPage />
     </div>
-  </div>
+  </div> -->
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>

@@ -22,7 +22,7 @@ export default defineI18nConfig(() => ({
 
         // About Page
         about_title: 'About Me!',
-        bio: 'My name is Jeff Anderson. I am a frontend engineer at Conxx Inc where I help develop their GridObserver platform as well as the Komodo Eye platform using tools like Nuxt and Vue. ',
+        bio: 'My name is Jeff Anderson. I am a frontend engineer at Conxx Inc/Komodo Systems where I help develop their GridObserver platform as well as the Komodo Eye platform using tools like Nuxt and Vue. ',
         //
 
         // Projects Page

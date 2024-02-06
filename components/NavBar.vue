@@ -21,29 +21,20 @@
           <font-awesome-icon :icon="page.icon" /> {{ page.title }}
         </NuxtLink>
       </div>
-      <NuxtLink 
-        v-for="locale in availableLocales"
-        :key="locale.code"
-        :to="switchLocalePath(locale.code)"
-        class="hover:text-secondary font-semibold"
-      >
-        {{  locale.name }}
-      </NuxtLink>
+      <LanguageDropdown />
     </div>
   </div>
 </template>
 
 
 <script setup lang="ts">
-import type { LocaleObject } from '@nuxtjs/i18n/dist/runtime/composables';
+import { faHouse, faCircleInfo, faDiagramProject } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 const { t } = useI18n();
 const localePath = useLocalePath();
-const switchLocalePath = useSwitchLocalePath()
-const { locales } = useI18n()
 
-const availableLocales = computed(() => <LocaleObject[]>locales.value)
 
 const selectedPage = ref(0);
 
@@ -58,35 +49,35 @@ const pages = computed(() => [
   {
     title: t('home'),
     to: localePath({ name: 'index' }),
-    icon: 'fa-solid fa-house',
+    icon: faHouse,
     id: 0,
     target: '',
   },
   {
     title: t('about'),
     to: localePath({ name: 'about' }),
-    icon: 'fa-solid fa-circle-info',
+    icon: faCircleInfo,
     id: 1,
     target: '',
   },
   {
     title: t('projects'),
     to: localePath({ name: 'projects' }),
-    icon: 'fa-solid fa-diagram-project',
+    icon: faDiagramProject,
     id: 2,
     target: '',
   },
   {
     title: t('github'),
     to: 'https://github.com/foggeydoughtnut',
-    icon: 'fa-brands fa-github',
+    icon: faGithub,
     id: 3,
     target: "_blank"
   },
   {
     title: t('linkedin'),
     to: 'https://www.linkedin.com/in/jeff-anderson-967391236/',
-    icon: 'fa-brands fa-linkedin',
+    icon: faLinkedin,
     id: 4,
     target: "_blank"
   }
