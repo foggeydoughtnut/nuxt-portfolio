@@ -3,7 +3,7 @@
     <div class="flex flex-row gap-4">
       <div v-for="page in pages">
         <NuxtLink 
-          v-if="page.id === selectedPage"
+          v-if="page.id === getSelectedPage()"
           :to="page.to"
           :target="page.target"
           class="underline hover:text-secondary font-semibold underline-offset-4"
@@ -14,7 +14,7 @@
         <NuxtLink
           v-else
           :to="page.to"
-          @click="setSelectedPage(page.id)"
+          @click="setSelectedPage(page?.id ?? 0)"
           :target="page.target"
           class="hover:text-secondary font-semibold"
         >
@@ -35,15 +35,24 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const { t } = useI18n();
 const localePath = useLocalePath();
 
+const selectedPage = useCookie('currentPage');
 
-const selectedPage = ref(0);
+selectedPage.value = selectedPage.value || '0';
 
-const setSelectedPage = (id: number) => {
-  selectedPage.value = id;
+const getSelectedPage = () : number => {
+  if (selectedPage.value) {
+    let parsedPage = parseInt(selectedPage.value);
+    if (parsedPage) {
+      return parsedPage;
+    }
+  }
+  return 0;
 }
 
 
-
+const setSelectedPage = (id: number) => {
+  selectedPage.value = `${id}`
+}
 
 const pages = computed(() => [
   {
@@ -71,14 +80,12 @@ const pages = computed(() => [
     title: t('github'),
     to: 'https://github.com/foggeydoughtnut',
     icon: faGithub,
-    id: 3,
     target: "_blank"
   },
   {
     title: t('linkedin'),
     to: 'https://www.linkedin.com/in/jeff-anderson-967391236/',
     icon: faLinkedin,
-    id: 4,
     target: "_blank"
   }
 ])
