@@ -14,9 +14,8 @@
         </div>
         <div class="w-2/3 border-t border-y-secondary-dark border-opacity-45 mb-4" />
         <div class="flex flex-row gap-4">
-          <!-- TODO make it so you can download the resumes when you click on these -->
-          <button class="bg-primary hover:bg-primary-dark px-4 py-3 rounded-lg font-semibold text-sm transition-all ease-in-out">{{ t('japanese_resume') }}</button>
-          <button class="bg-primary hover:bg-primary-dark px-4 py-3 rounded-lg font-semibold text-sm transition-all ease-in-out">{{ t('american_resume') }}</button>
+          <!-- <button class="bg-primary hover:bg-primary-dark px-4 py-3 rounded-lg font-semibold text-sm transition-all ease-in-out">{{ t('japanese_resume') }}</button> -->
+          <NuxtLink to="/Resume.pdf" target="_blank" external class="bg-primary hover:bg-primary-dark px-4 py-3 rounded-lg font-semibold text-sm transition-all ease-in-out">{{ t('american_resume') }}</NuxtLink>
         </div>
       </div>
       <NuxtPicture src="MyPicture.jpg" sizes="md:25vw" class="col-span-2"/>
