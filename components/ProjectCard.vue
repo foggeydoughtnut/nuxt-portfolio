@@ -1,12 +1,14 @@
 <template>
-  <div class="text-start shadow-xl rounded-xl overflow-hidden relative">
-    <div class="flex justify-center h-3/5 overflow-hidden">
-      <NuxtPicture v-if="image" :src="image" fit="cover"/>
+  <div class="flex flex-col text-start shadow-xl rounded-xl overflow-hidden relative w-full">
+    <div class="flex justify-center h-3/5 overflow-hidden w-full">
+      <NuxtImg v-if="image" :src="image" />
     </div>
-    <div class="px-8 py-4">
-      <h1 class="font-semibold text-2xl">{{ t(title) }}</h1>
-      <p class="text-md pb-24 py-4">{{ t(description) }}</p>
-      <div class="absolute bottom-8 right-8">
+    <div class="grid grid-rows-2 p-8 flex-1">
+      <div>
+        <h1 class="font-semibold text-2xl">{{ t(title) }}</h1>
+        <p class="text-md pt-4">{{ t(description) }}</p>
+      </div>
+      <div class="self-end justify-end flex flex-row">
         <NuxtLink 
           :to="link"
           target="_blank"
@@ -20,12 +22,12 @@
 </template>
 
 <script setup lang="ts">
-  const props = defineProps<{
-    image?: string,
-    title: string,
-    description: string,
-    link: string,
-  }>()
+const props = defineProps<{
+  image?: string,
+  title: string,
+  description: string,
+  link: string,
+}>()
 
-  const { t } = useI18n();
+const { t } = useI18n();
 </script>

@@ -14,7 +14,7 @@
   </nav>
 
   <div class="flex items-center justify-center">
-    <div class="grid grid-cols-2 gap-4 my-8 w-2/3">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 my-8 w-2/3">
       <ProjectCard
         v-for="project in projects[selectedTab]"
         :title="project.title"
