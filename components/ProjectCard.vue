@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col text-start shadow-xl rounded-xl overflow-hidden relative w-full">
     <div class="flex justify-center h-3/5 overflow-hidden w-full">
-      <NuxtImg v-if="image" :src="image" />
+      <NuxtImg v-if="image" :src="image" :placeholder="[50, 25, 75, 5]"/>
     </div>
     <div class="grid grid-rows-2 p-8 flex-1">
       <div>
