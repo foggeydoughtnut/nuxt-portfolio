@@ -18,7 +18,7 @@
           <NuxtLink to="/Resume.pdf" target="_blank" external class="bg-primary hover:bg-primary-dark px-4 py-3 rounded-lg font-semibold text-sm transition-all ease-in-out">{{ t('american_resume') }}</NuxtLink>
         </div>
       </div>
-      <NuxtPicture src="MyPicture.webp" sizes="md:25vw" class="col-span-2"/>
+      <NuxtPicture src="MyPicture.webp" sizes="md:25vw" :placeholder="[500, 400, 75, 5]" class="col-span-2"/>
     </div>
   </div>
 </template>
