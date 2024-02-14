@@ -59,31 +59,31 @@ const webProjects: Project[] = [
   {
     title: "komodo_eye_title",
     description: "komodo_eye_description",
-    image: 'KomodoEye.png',
+    image: 'KomodoEye.webp',
     link: 'https://komodosystems.com/',
   },
   {
     title: "grid_observer_title",
     description: "grid_observer_description",
-    image: 'GridObserver.png',
+    image: 'GridObserver.webp',
     link: 'https://conxx.net/gridobserver_overview.php',
   },
   {
     title: "aspire_power_title",
     description: "aspire_power_description",
-    image: 'AspireVisualization.png',
+    image: 'AspireVisualization.webp',
     link: 'https://github.com/DIRECTLab/evr-visualization-react'
   },
   {
     title: "charger_reservation_title",
     description: "charger_reservation_description",
-    image: 'ReservationApplication.png',
+    image: 'ReservationApplication.webp',
     link: 'https://github.com/DIRECTLab/reservation-frontend-web'
   },
   {
     title: "astro_portfolio_title",
     description: "astro_portfolio_description",
-    image: 'PortfolioSite.png',
+    image: 'PortfolioSite.webp',
     link: 'https://github.com/foggeydoughtnut/Portfolio-v2'
   },
 ]
@@ -92,31 +92,31 @@ const gameProjects: Project[] = [
   {
     title: 'galaga_title',
     description: 'galaga_description',
-    image: 'Galaga.png',
+    image: 'Galaga.webp',
     link: 'https://github.com/foggeydoughtnut/Galaga',
   },
   {
     title: 'pong_title',
     description: 'pong_description',
-    image: 'Pong.png',
+    image: 'Pong.webp',
     link: 'https://github.com/foggeydoughtnut/Pong',
   },
   {
     title: 'space_guy_title',
     description: 'space_guy_description',
-    image: 'space-guy.png',
+    image: 'space-guy.webp',
     link: 'https://github.com/foggeydoughtnut/SpaceGuy-Unity',
   },
   {
     title: 'hack_usu_2023_title',
     description: 'hack_usu_2023_description',
-    image: 'HackUSU2023.png',
+    image: 'HackUSU2023.webp',
     link: 'https://github.com/Serpents-of-the-East/hackUSU-2023',
   },
   {
     title: 'hack_usu_2022_title',
     description: 'hack_usu_2022_description',
-    image: 'HackUSU2022.png',
+    image: 'HackUSU2022.webp',
     link: 'https://github.com/Serpents-of-the-East/hack-usu',
   }
 ]
@@ -125,7 +125,7 @@ const otherProjects: Project[] = [
   {
     title: 'mountain_climb_title',
     description: 'mountain_climb_description',
-    image: 'MountainClimb.png',
+    image: 'MountainClimb.webp',
     link: 'https://github.com/foggeydoughtnut/mountain-climb'
   },
 ]
