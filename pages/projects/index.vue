@@ -22,6 +22,7 @@
         :image="project.image"
         :link="project.link"
         :lazy-load-images="project.lazyLoadImage"
+        :alt-text="project.altText"
       />
     </div>
   </div>
@@ -41,7 +42,8 @@ type Project = {
   description: string,
   image: string,
   link: string,
-  lazyLoadImage: boolean
+  lazyLoadImage: boolean,
+  altText: string,
 }
 
 
@@ -65,6 +67,7 @@ const webProjects: Project[] = [
     image: 'KomodoEye.webp',
     link: 'https://komodosystems.com/',
     lazyLoadImage: false,
+    altText: 'Komodo Eye image'
   },
   {
     title: "grid_observer_title",
@@ -72,6 +75,7 @@ const webProjects: Project[] = [
     image: 'GridObserver.webp',
     link: 'https://conxx.net/gridobserver_overview.php',
     lazyLoadImage: false,
+    altText: 'Image of Grid Observer'
   },
   {
     title: "aspire_power_title",
@@ -79,6 +83,7 @@ const webProjects: Project[] = [
     image: 'AspireVisualization.webp',
     link: 'https://github.com/DIRECTLab/evr-visualization-react',
     lazyLoadImage: false,
+    altText: 'Aspire Visualization'
   },
   {
     title: "charger_reservation_title",
@@ -86,13 +91,15 @@ const webProjects: Project[] = [
     image: 'ReservationApplication.webp',
     link: 'https://github.com/DIRECTLab/reservation-frontend-web',
     lazyLoadImage: false,
+    altText: 'Charger Reservation App image'
   },
   {
     title: "astro_portfolio_title",
     description: "astro_portfolio_description",
     image: 'PortfolioSite.webp',
     link: 'https://github.com/foggeydoughtnut/Portfolio-v2',
-    lazyLoadImage: true
+    lazyLoadImage: true,
+    altText: 'Astro Portfolio image'
   },
 ]
 
@@ -103,6 +110,7 @@ const gameProjects: Project[] = [
     image: 'Galaga.webp',
     link: 'https://github.com/foggeydoughtnut/Galaga',
     lazyLoadImage: false,
+    altText: 'Galaga replica image'
   },
   {
     title: 'pong_title',
@@ -110,6 +118,7 @@ const gameProjects: Project[] = [
     image: 'Pong.webp',
     link: 'https://github.com/foggeydoughtnut/Pong',
     lazyLoadImage: false,
+    altText: 'Pong replica image'
   },
   {
     title: 'space_guy_title',
@@ -117,6 +126,7 @@ const gameProjects: Project[] = [
     image: 'space-guy.webp',
     link: 'https://github.com/foggeydoughtnut/SpaceGuy-Unity',
     lazyLoadImage: false,
+    altText: 'Space Guy image'
   },
   {
     title: 'hack_usu_2023_title',
@@ -124,6 +134,7 @@ const gameProjects: Project[] = [
     image: 'HackUSU2023.webp',
     link: 'https://github.com/Serpents-of-the-East/hackUSU-2023',
     lazyLoadImage: false,
+    altText: 'Hack USU 2023 Image'
   },
   {
     title: 'hack_usu_2022_title',
@@ -131,6 +142,7 @@ const gameProjects: Project[] = [
     image: 'HackUSU2022.webp',
     link: 'https://github.com/Serpents-of-the-East/hack-usu',
     lazyLoadImage: true,
+    altText: 'Hack USU 2022 image'
   }
 ]
 
@@ -140,7 +152,8 @@ const otherProjects: Project[] = [
     description: 'mountain_climb_description',
     image: 'MountainClimb.webp',
     link: 'https://github.com/foggeydoughtnut/mountain-climb',
-    lazyLoadImage: false
+    lazyLoadImage: false,
+    altText: 'Mountain climb image'
   },
 ]
 
