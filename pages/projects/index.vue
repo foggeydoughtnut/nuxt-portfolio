@@ -21,6 +21,7 @@
         :description="project.description"
         :image="project.image"
         :link="project.link"
+        :lazy-load-images="project.lazyLoadImage"
       />
     </div>
   </div>
@@ -30,6 +31,7 @@
 </template>
 
 <script setup lang="ts">
+import { faLess } from '@fortawesome/free-brands-svg-icons';
 import { faGamepad, faGlobe, faCubesStacked } from '@fortawesome/free-solid-svg-icons';
 
 const { t } = useI18n();
@@ -38,7 +40,8 @@ type Project = {
   title: string,
   description: string,
   image: string,
-  link: string
+  link: string,
+  lazyLoadImage: boolean
 }
 
 
@@ -61,30 +64,35 @@ const webProjects: Project[] = [
     description: "komodo_eye_description",
     image: 'KomodoEye.webp',
     link: 'https://komodosystems.com/',
+    lazyLoadImage: false,
   },
   {
     title: "grid_observer_title",
     description: "grid_observer_description",
     image: 'GridObserver.webp',
     link: 'https://conxx.net/gridobserver_overview.php',
+    lazyLoadImage: false,
   },
   {
     title: "aspire_power_title",
     description: "aspire_power_description",
     image: 'AspireVisualization.webp',
-    link: 'https://github.com/DIRECTLab/evr-visualization-react'
+    link: 'https://github.com/DIRECTLab/evr-visualization-react',
+    lazyLoadImage: false,
   },
   {
     title: "charger_reservation_title",
     description: "charger_reservation_description",
     image: 'ReservationApplication.webp',
-    link: 'https://github.com/DIRECTLab/reservation-frontend-web'
+    link: 'https://github.com/DIRECTLab/reservation-frontend-web',
+    lazyLoadImage: false,
   },
   {
     title: "astro_portfolio_title",
     description: "astro_portfolio_description",
     image: 'PortfolioSite.webp',
-    link: 'https://github.com/foggeydoughtnut/Portfolio-v2'
+    link: 'https://github.com/foggeydoughtnut/Portfolio-v2',
+    lazyLoadImage: true
   },
 ]
 
@@ -94,30 +102,35 @@ const gameProjects: Project[] = [
     description: 'galaga_description',
     image: 'Galaga.webp',
     link: 'https://github.com/foggeydoughtnut/Galaga',
+    lazyLoadImage: false,
   },
   {
     title: 'pong_title',
     description: 'pong_description',
     image: 'Pong.webp',
     link: 'https://github.com/foggeydoughtnut/Pong',
+    lazyLoadImage: false,
   },
   {
     title: 'space_guy_title',
     description: 'space_guy_description',
     image: 'space-guy.webp',
     link: 'https://github.com/foggeydoughtnut/SpaceGuy-Unity',
+    lazyLoadImage: false,
   },
   {
     title: 'hack_usu_2023_title',
     description: 'hack_usu_2023_description',
     image: 'HackUSU2023.webp',
     link: 'https://github.com/Serpents-of-the-East/hackUSU-2023',
+    lazyLoadImage: false,
   },
   {
     title: 'hack_usu_2022_title',
     description: 'hack_usu_2022_description',
     image: 'HackUSU2022.webp',
     link: 'https://github.com/Serpents-of-the-East/hack-usu',
+    lazyLoadImage: true,
   }
 ]
 
@@ -126,7 +139,8 @@ const otherProjects: Project[] = [
     title: 'mountain_climb_title',
     description: 'mountain_climb_description',
     image: 'MountainClimb.webp',
-    link: 'https://github.com/foggeydoughtnut/mountain-climb'
+    link: 'https://github.com/foggeydoughtnut/mountain-climb',
+    lazyLoadImage: false
   },
 ]
 
