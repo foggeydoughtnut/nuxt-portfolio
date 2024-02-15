@@ -21,7 +21,7 @@ export default defineI18nConfig(() => ({
       //
 
       // About Page
-      about_title: 'About Me!',
+      about_title: 'About Me',
       bio: 'My name is Jeff Anderson. I am a frontend engineer at Conxx Inc/Komodo Systems where I help develop their GridObserver platform as well as the Komodo Eye platform using tools like Nuxt and Vue. ',
       notable_works: 'Notable Works',
       american_resume: "Resume",
@@ -97,14 +97,14 @@ export default defineI18nConfig(() => ({
       //
 
       // Home Page
-      welcome_message: 'こんにちは！',
+      welcome_message: 'はじめまして！',
       most_recent_project: "最近の作品",
       //
 
       // About Page
-      about_title: '自己紹介！',
-      bio: 'こんにちは！ジェフです。今はフロントエンドエンジニアをやります。Conxx Inc/Komodo Systemsを働きます。GridObserverとKomodo Eyeを開発することでNuxtとVueを使います。',
-      notable_works: 'めぼしい作品',
+      about_title: '自己紹介',
+      bio: 'はじめまして。ジェフと申します。現在はフロントエンドエンジニアをしています。Conxx Inc/Komodo Systemsで働いています。Conxx Inc/Komodo Eyeを開発するためにNuxt とVueを使いました。',
+      notable_works: '主な作品',
       // american_resume: "アメリカ式履歴書",
       american_resume: "履歴書",
       japanese_resume: "日本式履歴書",
@@ -126,43 +126,43 @@ export default defineI18nConfig(() => ({
       // Projects
       // Komodo Eye
       komodo_eye_title: 'Komodo Eye',
-      komodo_eye_description: 'このソフトウェアを開発します。これは簡単ネットワーク監視道具です。',
+      komodo_eye_description: 'このソフトウェアを開発しました。これは簡単なネットワークの監視道具です。',
       //
       // Grid Observer
       grid_observer_title: 'Grid Observer',
-      grid_observer_description: 'GridObserverを開発します。この道具はネットワーク監視することです。',
+      grid_observer_description: 'GridObserverを開発します。この道具はネットワーク監視をします。',
       //
       // Aspire Power Visualization
       aspire_power_title: 'Aspire電力ビジュアライザーション道具',
-      aspire_power_description: 'このソフトウェアは電力ビジュアライザーション道具からAspireのエンジニア者を使います。',
+      aspire_power_description: 'このソフトウェアは電力ビジュアライザーション道具のためにAspireのエンジニア技術者を使いました。',
       //
       // Charger Reservation App
       charger_reservation_title: '車の充電器予約道具',
-      charger_reservation_description: 'このソフトウェアは車充電器を予約できます。',
+      charger_reservation_description: 'このソフトウェアは車の充電器を予約できます。',
       //
       // Astro Portfolio
-      astro_portfolio_title: '前のAstro.jsのポートフォリオウェブサイト',
-      astro_portfolio_description: 'このサイトは前のポートフォリオです。このサイトはAstro.jsを使いました。',
+      astro_portfolio_title: '以前のAstro.jsのポートフォリオウェブサイト',
+      astro_portfolio_description: 'このサイトは以前のポートフォリオです。このサイトはAstro.jsを使いました。',
       //
       // Galaga
       galaga_title: "ギャラガ",
-      galaga_description: "ギャラガのレプリカがMonoGameで作りました",
+      galaga_description: "MonoGameでギャラガのレプリカを作りました。",
       //
       // Pong
       pong_title: 'Pong',
-      pong_description: 'PongのレブリカがMonoGameで作りました。このゲームはECS体系を従いました。',
+      pong_description: 'MonoGameでPongのレプリカを作りました。このゲームはECS体系に従いました。',
       //
       // Space Guy
       space_guy_title: 'Space Guy',
-      space_guy_description: 'このゲームはトップダウンなゲームがUnityで作りました。',
+      space_guy_description: 'このゲームはUnityでトップダウンなゲームを作りました。',
       //
       // Hack USU 2023
       hack_usu_2023_title: 'Hack USU 2023 JRPG',
-      hack_usu_2023_description: 'このゲームは２４時間に二人と作りました。JRPGを作りました。',
+      hack_usu_2023_description: 'このゲームは２４時間で二人とJRPGを作りました。',
       //
       // Hack USU 2022
       hack_usu_2022_title: 'Hack USU 2022 Crypt',
-      hack_usu_2022_description: 'このゲームは２４時間に二人と作りました。これは横スクローリングなゲームです。',
+      hack_usu_2022_description: 'このゲームは２４時間で二人と作りました。これは横スクロールの作品です。',
       //
       // Mountain Climb
       mountain_climb_title: 'Mountain Climb',
