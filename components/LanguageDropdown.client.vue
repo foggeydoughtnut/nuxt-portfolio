@@ -1,7 +1,7 @@
 <template>
   <Menu as="div" class="relative inline-block text-left z-10">
     <div>
-      <MenuButton class="flex flex-row font-semibold justify-center">
+      <MenuButton class="flex flex-row font-semibold justify-center" aria-label="Language Dropdown" title="Language Dropdown">
         <LanguageIcon class="h-6 w-5 text-2xl"/>
         <ChevronDownIcon class="h-6 w-5"/>
       </MenuButton>

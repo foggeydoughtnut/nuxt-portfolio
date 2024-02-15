@@ -1,6 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'en'
+      }
+    }
+  },
   css: [
     '~/assets/css/main.css',
     '@fortawesome/fontawesome-svg-core/styles.css'
@@ -13,10 +20,12 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/i18n',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxtjs/robots'
   ],
   image: {
-
+    format: ['webp'],
+    dir: 'assets/images'
   },
   i18n: {
     vueI18n: './i18n.config.ts',
@@ -44,5 +53,8 @@ export default defineNuxtConfig({
         en: '/projects'
       }
     }
+  },
+  robots: {
+    configPath: './robots.config'
   }
 })

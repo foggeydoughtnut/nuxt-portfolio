@@ -32,7 +32,6 @@
 </template>
 
 <script setup lang="ts">
-import { faLess } from '@fortawesome/free-brands-svg-icons';
 import { faGamepad, faGlobe, faCubesStacked } from '@fortawesome/free-solid-svg-icons';
 
 const { t } = useI18n();
