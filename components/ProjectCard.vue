@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col text-start shadow-xl rounded-xl overflow-hidden relative w-full">
-    <div class="flex justify-center h-3/5 overflow-hidden w-full">
-      <NuxtImg v-if="image && lazyLoadImages" :src="image"  sizes="80vw sm:50vw md:700px" loading="lazy" :alt="altText" />
-      <NuxtImg v-else-if="image && !lazyLoadImages" :src="image" sizes="80vw sm:50vw md:700px" :alt="altText" />
+  <div class="flex flex-col text-start shadow-xl rounded-xl overflow-hidden relative w-full h-full">
+    <div class="flex justify-center overflow-hidden w-full">
+      <NuxtImg v-if="image && lazyLoadImages" :src="image" fit="cover"  sizes="80vw sm:50vw md:500px lg:500px" loading="lazy" :alt="altText" />
+      <NuxtImg v-else-if="image && !lazyLoadImages" :src="image" fit="cover" sizes="80vw sm:50vw md:500px lg:500px" :alt="altText" />
     </div>
     <div class="grid grid-rows-2 p-8 flex-1">
       <div>

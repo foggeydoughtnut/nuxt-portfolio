@@ -15,15 +15,16 @@
 
   <div class="flex items-center justify-center">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 my-8 w-2/3">
-      <ProjectCard
-        v-for="project in projects[selectedTab]"
-        :title="project.title"
-        :description="project.description"
-        :image="project.image"
-        :link="project.link"
-        :lazy-load-images="project.lazyLoadImage"
-        :alt-text="project.altText"
-      />
+      <div v-for="project in projects[selectedTab]" :key="project.title">
+        <ProjectCard
+          :title="project.title"
+          :description="project.description"
+          :image="project.image"
+          :link="project.link"
+          :lazy-load-images="project.lazyLoadImage"
+          :alt-text="project.altText"
+        />
+      </div>
     </div>
   </div>
 
