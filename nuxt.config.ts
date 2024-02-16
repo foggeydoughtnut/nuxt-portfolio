@@ -25,7 +25,6 @@ export default defineNuxtConfig({
   ],
   image: {
     format: ['webp'],
-    dir: 'assets/images'
   },
   i18n: {
     vueI18n: './i18n.config.ts',
