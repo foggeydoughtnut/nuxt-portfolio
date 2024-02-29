@@ -16,6 +16,7 @@
         <div class="flex flex-row gap-4">
           <!-- <button class="bg-primary hover:bg-primary-dark px-4 py-3 rounded-lg font-semibold text-sm transition-all ease-in-out">{{ t('japanese_resume') }}</button> -->
           <NuxtLink to="/Resume.pdf" target="_blank" external class="bg-primary hover:bg-primary-dark px-4 py-3 rounded-lg font-semibold text-sm transition-all ease-in-out">{{ t('american_resume') }}</NuxtLink>
+          <NuxtLink to="/Japanese-Resume.pdf" target="_blank" external class="bg-primary hover:bg-primary-dark px-4 py-3 rounded-lg font-semibold text-sm transition-all ease-in-out">{{ t('japanese_resume') }}</NuxtLink>
         </div>
       </div>
       <NuxtImg src="MyPicture.webp" sizes="md:25vw" :placeholder="[400, 500, 75, 5]" class="col-span-2" width="400" height="500"/>

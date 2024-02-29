@@ -24,8 +24,8 @@ export default defineI18nConfig(() => ({
       about_title: 'About Me',
       bio: 'My name is Jeff Anderson. I am a frontend engineer at Conxx Inc/Komodo Systems where I help develop their GridObserver platform as well as the Komodo Eye platform using tools like Nuxt and Vue. ',
       notable_works: 'Notable Works',
-      american_resume: "Resume",
-      japanese_resume: "Japanese Style Resume",
+      american_resume: "English Resume",
+      japanese_resume: "Japanese Resume",
       //
 
       // Projects Page
@@ -106,8 +106,8 @@ export default defineI18nConfig(() => ({
       bio: 'はじめまして。ジェフと申します。現在はフロントエンドエンジニアをしています。Conxx Inc/Komodo Systemsで働いています。Conxx Inc/Komodo Eyeを開発するためにNuxt とVueを使いました。',
       notable_works: '主な作品',
       // american_resume: "アメリカ式履歴書",
-      american_resume: "履歴書",
-      japanese_resume: "日本式履歴書",
+      american_resume: "英語の履歴書",
+      japanese_resume: "日本語の履歴書",
       //
 
       // Projects Page
